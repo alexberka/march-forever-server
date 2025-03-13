@@ -1,4 +1,5 @@
 from django.db import models
+from .box import Box
 from .user import User
 
 class Bracket(models.Model):
