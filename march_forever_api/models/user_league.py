@@ -6,4 +6,4 @@ class UserLeague(models.Model):
   user_id = models.ForeignKey(User, on_delete=models.CASCADE)
   league_id = models.ForeignKey(League, on_delete=models.CASCADE)
   joined_on = models.DateTimeField(auto_now_add=True)
-  retired = models.BooleanField(default=False)
+  retired_on = models.DateTimeField(null=True)
